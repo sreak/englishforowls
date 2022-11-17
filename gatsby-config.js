@@ -3,22 +3,22 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `My Gatsby Site`,
+    title: `Learn English Language.`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-image", "gatsby-transformer-remark", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
+  plugins: [
+  "gatsby-plugin-image", 
+  "gatsby-transformer-remark", 
+  "gatsby-plugin-sharp", 
+  "gatsby-transformer-sharp",
+  "gatsby-plugin-mdx",
+
+  {
+    resolve: `gatsby-source-filesystem`,
     options: {
-      "name": "images",
-      "path": "./src/images/"
+      name: `email`,
+      path: `${__dirname}/email/`,
     },
-    __key: "images"
-  }, {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
-    },
-    __key: "pages"
-  }]
+  },
+  ],
 };
