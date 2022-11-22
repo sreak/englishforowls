@@ -1,18 +1,25 @@
 import { Link } from "gatsby"
 import * as React from "react"
-import { container } from "./layout.module.css"
+import { container} from "./layout.module.css"
+
 
 const Layout = ({children})=>{
+     
+ 
     return(
         <div className={container}>
-            <h3>englishforowls</h3>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/email">Emails</Link>
+       
+        <ul>
+               <li style={{display: "inline"}}>
+                        <Link to="/">Home</Link>
                     </li>
+
+                    <li style={{display: "inline", marginLeft: "5px"}}>
+                        <Link to="/email">Email</Link>
+                    </li>
+                  
                 </ul>
-            </nav>
+      
 
             <main>
                 {/*All the body contents will go here.*/}
