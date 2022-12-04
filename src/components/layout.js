@@ -15,7 +15,7 @@ const Layout = ({children})=>{
                     </li>
 
                     <li style={{display: "inline", marginLeft: "5px"}}>
-                        <Link to="/email">Email</Link>
+                        <Link to="/content/email">Emails</Link>
                     </li>
                   
                 </ul>

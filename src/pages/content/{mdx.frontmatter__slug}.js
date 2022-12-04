@@ -8,7 +8,10 @@ const BlogPost=({data, children})=>{
        <Layout>
 
         <p>{data.mdx.frontmatter.date}</p>
-        {children}
+
+        <main>{children}</main>
+
+
        </Layout>
     )
 }
