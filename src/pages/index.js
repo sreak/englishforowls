@@ -1,3 +1,4 @@
+import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
 import Layout from "../components/layout"
 
@@ -11,6 +12,13 @@ const HomePage=()=>{
       For the time being this page is under construction.
       Thnaks for your love.
      </p>
+    <br/>
+    
+    <StaticImage
+    src="../images/demo.jpeg"
+    alt="Demo image for the home page."
+   />
+
    </Layout>
   )
 }

@@ -1,5 +1,7 @@
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
+import Header from "./header"
 import { container} from "./layout.module.css"
 
 
@@ -7,21 +9,10 @@ const Layout = ({children})=>{
      
  
     return(
-        <div className={container}>
-       
-        <ul>
-               <li style={{display: "inline"}}>
-                        <Link to="/">Home</Link>
-                    </li>
-
-                    <li style={{display: "inline", marginLeft: "5px"}}>
-                        <Link to="/content/email">Emails</Link>
-                    </li>
-                  
-                </ul>
-      
-
-            <main>
+        <div>
+           <Header />
+           
+            <main className={container}>
                 {/*All the body contents will go here.*/}
               
                {children} 
